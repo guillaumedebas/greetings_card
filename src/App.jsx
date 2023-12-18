@@ -1,6 +1,6 @@
-import { Button } from '@mui/material'
 import './App.css'
-import { Star } from '@mui/icons-material'
+import Navbar from './components/Navbar/Navbar'
+
 
 
 function App() {
@@ -8,13 +8,7 @@ function App() {
 
   return (
     <>
-  <Button
-  variant="contained"
-  onClick={() => console.log('hello World')}
-  disabled
-  >
-  <Star></Star></Button>
- 
+<Navbar />
   
     </>
   )
