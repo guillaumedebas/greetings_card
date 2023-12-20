@@ -12,36 +12,36 @@ export const mainNavbarItems = [{
     id: 0,
     icon: <PeopleIcon />,
     label: 'Authentication',
-    route: 'route'
+    route: 'authentication'
 } ,
 {
     id: 1,
     icon: <StorageIcon />,
     label: 'Database',
-    route: 'route'
+    route: 'database'
 } ,
 {
     id: 2,
     icon: <ImageIcon />,
     label: 'Storage',
-    route: 'route'
+    route: 'storage'
 } ,
 {
     id: 3,
     icon: <PublicIcon />,
     label: 'Hosting',
-    route: 'route'
+    route: 'hosting'
 } ,
 {
     id: 4,
     icon: <CodeIcon />,
     label: 'Functions',
-    route: 'route'
+    route: 'functions'
 } ,
 {
     id: 5,
     icon: <SettingsInputCompositeIcon />,
     label: 'Machine learning',
-    route: 'route'
+    route: 'machine-learning'
 } ,
 ]
