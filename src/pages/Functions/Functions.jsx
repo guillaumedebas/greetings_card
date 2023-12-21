@@ -1,11 +1,11 @@
-
+import Grid from '@mui/material/Grid';
 
 
 const Functions = () => {
     return (
-        <div>
+        <Grid item xs={8}>
             This is Functions page.
-        </div>
+        </Grid>
     )
 }
 

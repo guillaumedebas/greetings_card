@@ -1,11 +1,11 @@
-
+import Grid from '@mui/material/Grid';
 
 
 const Storage = () => {
     return (
-        <div>
+        <Grid item xs={8}>
             This is Storage page.
-        </div>
+        </Grid>
     )
 }
 

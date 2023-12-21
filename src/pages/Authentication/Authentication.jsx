@@ -1,10 +1,10 @@
-
+import Grid from '@mui/material/Grid';
 
 const Authentication = () => {
     return (
-        <div style={{marginLeft: '500px'}}>
+        <Grid item xs={8}>
             This is authentication page.
-        </div>
+        </Grid>
     )
 }
 

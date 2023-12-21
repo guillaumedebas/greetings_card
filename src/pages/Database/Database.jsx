@@ -1,11 +1,11 @@
-
+import Grid from '@mui/material/Grid';
 
 
 const Database = () => {
     return (
-        <div>
+        <Grid item xs={8}>
             This is Database page.
-        </div>
+        </Grid>
     )
 }
 
