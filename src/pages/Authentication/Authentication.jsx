@@ -3,6 +3,7 @@ import CommonButton from '../../components/Common/CommonButtom/CommonButtom';
 import NotificationBell from '../../components/NotificationBell/NotificationBell';
 
 
+
 const Authentication = () => {
     const buttonStyles = {
         fontSize: '0.875rem',
@@ -32,14 +33,13 @@ const Authentication = () => {
                 sx={buttonStyles}
             >text</CommonButton>
             <CommonButton
-                variant="contained"
-                color="primary"
-            >Add User
+                variant="default"
+            >
+            Go to docs
             </CommonButton>
             <NotificationBell
-            iconColor='primary'
-            badgeContent= {0}
-             />
+                iconColor='primary'
+            />
         </Grid>
     )
 }
