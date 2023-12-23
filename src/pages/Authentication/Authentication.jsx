@@ -1,5 +1,7 @@
 import Grid from '@mui/material/Grid';
 import CommonButton from '../../components/Common/CommonButtom/CommonButtom';
+import NotificationBell from '../../components/NotificationBell/NotificationBell';
+
 
 const Authentication = () => {
     const buttonStyles = {
@@ -32,7 +34,12 @@ const Authentication = () => {
             <CommonButton
                 variant="contained"
                 color="primary"
-            >Add User</CommonButton>
+            >Add User
+            </CommonButton>
+            <NotificationBell
+            iconColor='primary'
+            badgeContent= {0}
+             />
         </Grid>
     )
 }

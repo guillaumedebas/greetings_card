@@ -15,7 +15,7 @@ export const dashboardTheme = createTheme({
     },
     palette: {
         primary: {
-            main: '#000',
+            main: '#bada55',
         },
     },
     typography: {
