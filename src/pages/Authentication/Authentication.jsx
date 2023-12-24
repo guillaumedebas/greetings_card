@@ -30,7 +30,8 @@ const Authentication = () => {
                 variant="contained"
                 sx={buttonStyles}
             >text</CommonButton>
-        <Header />
+        <Header
+        title="Authentication" />
         </Grid>
     )
 }
