@@ -7,11 +7,50 @@ import Typography from '@mui/material/Typography';
 import PropTypes from 'prop-types';
 import Tooltip from '@mui/material/Tooltip';
 import HelpIcon from '@mui/icons-material/Help';
-
+import Box from '@mui/system/Box';
 
 const Header = ({title}) => {
+     const headerStyles = {
+        wrapper: {
+            width: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            backgroundColor: '#009be5',
+            padding: '20px',
+        },
+        topRow: {
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'end',
+            alignItems: 'center',
+            marginBottom: '20px',
+            '*': {
+                marginRight: '5px',
+            },
+        },
+        middleRow: {
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            marginBottom: '20px',
+            marginLeft: '320px',
+        },
+        link: {
+            fontWeight: 500,
+            color: 'rgba(255, 255, 255, 0.7)',
+            "&:hover": {
+                color: '#fff',
+                cursor: 'pointer',
+            },
+        },
+        webButton: {
+            marginRight: '5px',
+        },
+    };
+    
     return (
-        <div >
+        <Box sx={headerStyles.wrapper}>
             <CommonButton
                 variant="default"
             >
@@ -26,7 +65,7 @@ const Header = ({title}) => {
                 <CommonButton variant="outlined">Web setup</CommonButton>
                <Tooltip title="help"><IconButton><HelpIcon/></IconButton></Tooltip>
             </div>
-        </div>
+        </Box>
     )
 }
 Header.propTypes = {
