@@ -9,8 +9,8 @@ import Tooltip from '@mui/material/Tooltip';
 import HelpIcon from '@mui/icons-material/Help';
 import Box from '@mui/system/Box';
 
-const Header = ({title}) => {
-     const headerStyles = {
+const Header = ({ title }) => {
+    const headerStyles = {
         wrapper: {
             width: '100%',
             display: 'flex',
@@ -48,23 +48,46 @@ const Header = ({title}) => {
             marginRight: '5px',
         },
     };
-    
+
     return (
         <Box sx={headerStyles.wrapper}>
-            <CommonButton
-                variant="default"
-            >
-                Go to docs
-            </CommonButton>
-            <NotificationBell
-                iconColor='primary'
-            />
-            <Avatar src={photoguillaume} />
-            <div>
-                <Typography>{title}</Typography>
-                <CommonButton variant="outlined">Web setup</CommonButton>
-               <Tooltip title="help"><IconButton><HelpIcon/></IconButton></Tooltip>
-            </div>
+            <Box sx={headerStyles.topRow}>
+                <Typography
+                    sx={headerStyles.link}
+                >
+                    Go to docs
+                </Typography>
+                <NotificationBell
+                    iconColor='white'
+                />
+                <Avatar src={photoguillaume} />
+            </Box>
+            <Box sx={headerStyles.middleRow}>
+                <Typography
+                    variant="h1"
+                    color="white"
+                >
+                    {title}
+                </Typography>
+                <Box>
+                    <CommonButton
+                        sx={headerStyles.webButton}
+                        variant="outlined"
+                    >
+                        Web setup
+                    </CommonButton>
+                    <Tooltip
+                        title="help"
+                    >
+                        <IconButton
+                            color="white"
+                            sx={headerStyles.helpIcon}
+                        >
+                            <HelpIcon />
+                        </IconButton>
+                    </Tooltip>
+                </Box>
+            </Box>
         </Box>
     )
 }
