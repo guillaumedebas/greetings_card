@@ -7,11 +7,11 @@ import { useState, useEffect } from 'react';
 
 
 function App() {
-const [title, setTitle] = useState(null)
+const [title, setTitle] = useState('')
 const location = useLocation()
 
 useEffect(() => {
-  const parsedTitle = location.pathname.replace(/\W/g, '')
+  const parsedTitle = location.pathname.replace(/\W/g, ' ')
   setTitle(parsedTitle)
 }, [location])
   return (

@@ -1,7 +1,9 @@
 import { Button } from "@mui/material"
+import PropTypes from 'prop-types';
 
 
-const commonButton = ({children, color, disabled, size, variant, sx}) => {
+
+const CommonButton = ({children, color, disabled, size, variant, sx}) => {
     return (
         <Button
             color={color}
@@ -14,5 +16,14 @@ const commonButton = ({children, color, disabled, size, variant, sx}) => {
         </Button>
     )
 }
+CommonButton.propTypes = {
+    children: PropTypes.node,
+    color: PropTypes.string,
+    disabled: PropTypes.bool,
+    size: PropTypes.string,
+    variant: PropTypes.string,
+    sx: PropTypes.object,
+    type: PropTypes.string
+};
 
-export default commonButton
+export default CommonButton
