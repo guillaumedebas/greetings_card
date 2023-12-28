@@ -1,14 +1,17 @@
 import BasicCard from '../../components/BasicCard/BasicCard';
 import SearchBar from '../../components/SearchBar/SearchBar';
-import CommonButton from '../../components/Common/CommonButtom/CommonButtom';
+import CommonButton from '../../components/Common/CommonButton/CommonButton';
 import RefreshIcon from '@mui/icons-material/Refresh';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { cardHeaderStyles } from './styles';
 import GripWrapper from '../../components/GridWrapper/GripWrapper';
+import BasicModal from '../../components/Common/BasicModal/BasicModal';
+import { useState } from 'react';
 
 const Authentication = () => {
+    const [open, setOpen] = useState(false)
     const getHeader = () => {
         const handleChange = (value) => {
             console.log(value)
@@ -16,6 +19,8 @@ const Authentication = () => {
 
         const addUser = () => {
             console.log('click')
+            setOpen(true)
+          
         }
 
 
@@ -60,7 +65,7 @@ const Authentication = () => {
                 header={getHeader()}
                 content={getContent()}
             />
-
+            <BasicModal open={open} onClose={() => setOpen(false)}/>
         </GripWrapper>
     )
 }

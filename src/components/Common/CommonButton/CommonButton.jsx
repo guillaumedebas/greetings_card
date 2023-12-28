@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 
 
-const CommonButton = ({children, color, disabled, size, variant, sx}) => {
+const CommonButton = ({children, color, disabled, size, variant, sx, onClick}) => {
     return (
         <Button
             color={color}
@@ -11,6 +11,7 @@ const CommonButton = ({children, color, disabled, size, variant, sx}) => {
             size={size}
             variant={variant}
             sx={sx}
+            onClick={onClick}
         >
             {children}
         </Button>
@@ -23,7 +24,8 @@ CommonButton.propTypes = {
     size: PropTypes.string,
     variant: PropTypes.string,
     sx: PropTypes.object,
-    type: PropTypes.string
+    type: PropTypes.string,
+    onClick: PropTypes.func
 };
 
 export default CommonButton
