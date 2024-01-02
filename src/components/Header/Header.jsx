@@ -1,4 +1,4 @@
-import NotificationBell from '../NotificationBell/NotificationBell';
+import NotificationBell from '../Common/NotificationBell/NotificationBell';
 import Avatar from '@mui/material/Avatar';
 import photoguillaume from '../../assets/photo-guillaume-debas.webp'
 import CommonButton from '../Common/CommonButton/CommonButton';

@@ -1,5 +1,5 @@
-import BasicCard from '../../components/BasicCard/BasicCard';
-import SearchBar from '../../components/SearchBar/SearchBar';
+import BasicCard from '../../components/Common/BasicCard/BasicCard';
+import SearchBar from '../../components/Common/SearchBar/SearchBar';
 import CommonButton from '../../components/Common/CommonButton/CommonButton';
 import RefreshIcon from '@mui/icons-material/Refresh';
 import IconButton from '@mui/material/IconButton';
@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { cardHeaderStyles } from './styles';
 import { useState } from 'react';
-import GridWrapper from '../../components/GridWrapper/GripWrapper';
+import GridWrapper from '../../components/Common/GridWrapper/GripWrapper';
 import NewUserModal from '../../components/Modals/NewUserModal/NewUserModal';
 
 

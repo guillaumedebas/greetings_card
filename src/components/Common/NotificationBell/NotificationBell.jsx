@@ -3,7 +3,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import PropTypes from 'prop-types';
-import BasicMenu from '../../components/BasicMenu/BasicMenu';
+import BasicMenu from '../BasicMenu/BasicMenu'
 import { useState } from 'react';
 
 
